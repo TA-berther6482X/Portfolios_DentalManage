@@ -170,6 +170,11 @@ td.revWide {
   margin-top: 10px;
 }
 
+.figure {
+  display: block;
+  width: 100%;
+}
+
 /* intro */
 
 .introduct {
@@ -186,4 +191,20 @@ td.revWide {
   background: linear-gradient(transparent 60%, rgb(184, 210, 214) 60%);
 }
 
+/* footer */
+footer {
+  display: block;
+  background-color: rgba(200, 204, 204, 0.897);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 5px 0;
+  margin-top: 15px;
+  width: 100%;
+  height: 40px;
+}
 
+footer .logo {
+  text-align: center;
+  font-size: 20px;
+}
