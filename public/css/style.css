@@ -33,6 +33,7 @@ td.revWide {
 .settingMenus > div {
   display: inline-block;
   padding-top: 30px;
+  margin-bottom: 10px;
 }
 
 .contactTitle {
