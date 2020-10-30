@@ -57,7 +57,7 @@
               <div class="col-md-6"><textarea class="form-control" name="contents" placeholder="こちらにお問い合わせ内容を入力してください。"></textarea></div>
             </div>
 
-            <div class="form-group row form-check">
+            <div class="form-group row form-check caution">
               <input type="checkbox" class="form-check-input" id="sampleCheck1" name="caution" value="1">
               <label class="form-check-label" for="sampleCheck1">注意事項に同意する</label>
             </div>

@@ -8,14 +8,16 @@
     <div class="col-md-10">
       <div class="card">
         <div class="card-body">
-          <div class="card-header"><span class="calenderTitle">予約カレンダー</span>
-            <div class="calenderHeader">{{ $data->year }}年 {{ $data->month }}月</div>
-            <a href="{{ route('reservation.index', [ 'y' => $calendardates[1], 'm' => $calendardates[2], ]) }}"
-              class="btn btn-primary">前月</a>
-            <a href="{{ route('reservation.index', [ 'y' => $calendardates[3], 'm' => $calendardates[4], ]) }}"
-              class="btn btn-primary">今日</a>
-            <a href="{{ route('reservation.index', [ 'y' => $calendardates[5], 'm' => $calendardates[6], ]) }}"
-              class="btn btn-primary">次月</a>
+          <div class="card-header calenderTitle"><span>予約カレンダー</span>
+            <div class="calenderblock">
+              <div class="calenderLeft">{{ $data->year }}年 {{ $data->month }}月</div>
+              <a href="{{ route('reservation.index', [ 'y' => $calendardates[5], 'm' => $calendardates[6], ]) }}"
+                class="btn btn-primary">次月</a>
+              <a href="{{ route('reservation.index', [ 'y' => $calendardates[3], 'm' => $calendardates[4], ]) }}"
+                class="btn btn-primary">今日</a>
+              <a href="{{ route('reservation.index', [ 'y' => $calendardates[1], 'm' => $calendardates[2], ]) }}"
+                class="btn btn-primary">前月</a>
+            </div>
           </div>
 
           @if (session('status'))

@@ -88,7 +88,7 @@
             @yield('content')
         </main>
         <footer>
-            <div class="logo">DentalManage / copyright(c) 2011</div>
+            <div class="logo">DentalManage / copyright(c) 2020</div>
         </footer>
     </div>
 </body>

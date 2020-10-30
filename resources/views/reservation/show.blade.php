@@ -61,7 +61,7 @@
               </div>
             </div>
 
-            <div class="form-group row form-check">
+            <div class="form-group row form-check caution">
                 <input type="checkbox" class="form-check-input" id="sampleCheck2" name="caution" value="1">
                 <label class="form-check-label" for="sampleCheck2">注意事項に同意する</label>
             </div> 
