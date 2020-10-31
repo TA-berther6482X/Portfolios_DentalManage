@@ -87,6 +87,7 @@
         <main class="py-4">
             @yield('content')
         </main>
+        <div class="push"></div>
         <footer>
             <div class="logo">DentalManage / copyright(c) 2020</div>
         </footer>

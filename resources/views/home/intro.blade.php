@@ -29,7 +29,7 @@
             </div>
             
             <figure class="figure">
-              <img src="storage/tooth_images/haisya.png" class="toothFigure" alt="歯医者のイメージ画像">
+              <img src="../../storage/tooth_images/haisya.png" class="toothFigure" alt="歯医者のイメージ画像">
             </figure>
           
           </section>

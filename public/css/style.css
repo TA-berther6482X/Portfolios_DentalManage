@@ -2,7 +2,9 @@
 
 /* common */
 
-
+.push {
+  height: 50px
+}
 
 .partition {
   color: rgba(0, 0, 0, 0.4);
@@ -210,3 +212,4 @@ footer .logo {
   text-align: center;
   font-size: 20px;
 }
+
