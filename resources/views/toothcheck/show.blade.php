@@ -16,7 +16,7 @@
 
             <section class="cardToothCheck">
               <figure class="figure">
-                <img src="/storage/tooth_images/{{ $toothcheck->image  }}" class="toothFigure" alt="{{ $toothcheck->image  }}">
+                <img src="storage/tooth_images/{{ $toothcheck->image  }}" class="toothFigure" alt="{{ $toothcheck->image  }}">
               </figure>
 
               <table class="table table-striped">
