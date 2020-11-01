@@ -9,7 +9,7 @@ use Faker\Generator as Faker;
 $factory->define(ToothCheck::class, function (Faker $faker) {
     return [
         'user_id' => 1111111111,
-        'image' => 1111111111 . Str::random(6) . '.jpg',
+        'pikapika_ha.png',
         'comment' => $faker->realText(20),
     ];
 });
