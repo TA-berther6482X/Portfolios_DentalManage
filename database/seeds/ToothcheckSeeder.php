@@ -11,6 +11,6 @@ class ToothcheckSeeder extends Seeder
      */
     public function run()
     {
-        factory(ToothCheck::class, 200)->create();
+        factory(ToothCheck::class, 150)->create();
     }
 }
