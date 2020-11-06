@@ -1,0 +1,33 @@
+// タブレット向け
+@media (max-width: 1000px) {
+  
+  .cardToothCheck {
+    figure, table {
+      width: 100%;
+    }
+  }
+  
+  .nav-home {
+    display: none;
+  }
+
+}
+
+// スマートフォン向け
+@media (max-width: 670px) {
+
+  .cardToothCheck table {
+    font-size: 20px;
+  }
+
+  .settingMenus, .goToIndex {
+    .btn {
+      width: 100%;
+    }  
+  }
+  
+  .contactTitle, .goToIndex .btn {
+    margin-bottom: 10px;
+  }
+
+}

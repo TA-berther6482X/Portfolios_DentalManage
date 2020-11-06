@@ -65,8 +65,8 @@
           </section>
           
           <div class="settingMenus">
-            <div><a class="contactTitle btn btn-lg btn-outline-primary" href="{{ route('contact.create') }}">お問い合わせ</a></div>
-            <div><a class="userinfoTitle btn btn-lg btn-outline-primary" href="{{ route('userinfo.show') }}">登録情報の確認または変更</a></div>
+            <a class="contactTitle btn btn-lg btn-outline-primary" href="{{ route('contact.create') }}">お問い合わせ</a>
+            <a class="userinfoTitl btn btn-lg btn-outline-primary" href="{{ route('userinfo.show') }}">登録情報の確認または変更</a>
           </div>
         </div>
       </div>

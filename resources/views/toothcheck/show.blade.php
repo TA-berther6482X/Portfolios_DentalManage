@@ -37,7 +37,7 @@
         </div>
       </div>
       <div class="goToIndex">
-        <a href="{{ url('/') }}"  class="btn btn-secondary btn-lｆg">戻る</a>
+        <a class="btn btn-secondary" href="{{ url('/') }}">戻る</a>
       </div>
   </div>
 </div>
