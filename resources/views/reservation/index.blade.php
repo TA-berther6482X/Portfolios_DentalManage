@@ -54,19 +54,17 @@
                   @if(isset($query))
                     @if(date("Ymd", strtotime($query->date)) === $data->format('Ymd'))
                     <script>
-                      document.getElementById('checkDay{{ $i }}').classList.add('revDay');
                       var divToday = '<div class="divToday">予約日</div>';
-                      document.getElementById('checkDay{{ $i }}').insertAdjacentHTML('beforeend', divToday);
+                      document.getElementById('checkDay{{ $i }}').classList.add('revDay');
+                      document.getElementById('checkDay{{ $i }}').insertAdjacentHTML('beforeend', '<div class="divToday">予約日</div>');
                     </script>
                     @endif
                   @endif
 
                   @if($data->format('w') == 0)
                   <script>document.getElementById('checkDay{{ $i }}').classList.add('sunday');</script>
-                  @endif
-
-                  @if($data->format('w') == 6)
-                  <script>document.getElementById('checkDay{{ $i }}').classList.add('saterday');</script>
+                  @elseif($data->format('w') == 6)
+                  <script>document.getElementById('checkDay{{ $i }}').classList.add('saturday');</script>
                   @endif
 
                   @if($data->addDays()->format('w') == 0)

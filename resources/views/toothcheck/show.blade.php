@@ -8,37 +8,40 @@
         <div class="card-header">検診結果</div>
 
         <div class="card-body">
-            @if (session('status'))
-            <div class="alert alert-success" role="alert">
-              {{ session('status') }}
-            </div>
-            @endif
+          @if (session('status'))
+          <div class="alert alert-success" role="alert">
+            {{ session('status') }}
+          </div>
+          @endif
 
-            <section class="cardToothCheck">
-              <figure class="figure">
-                <img src="../../storage/tooth_images/{{ $toothcheck->image  }}" class="toothFigure" alt="{{ $toothcheck->image  }}">
-              </figure>
+          <section class="cardToothCheck">
+            <figure class="figure">
+              <img src="../../storage/tooth_images/{{ $toothcheck->image  }}" class="toothFigure"
+                alt="{{ $toothcheck->image  }}">
+            </figure>
 
-              <table class="table table-striped">
-                <tr>
-                  <th scope="row">ユーザー番号</th>
-                  <td>{{ $toothcheck->user_id }}</td>
-                </tr>
-                <tr>
-                  <th scope="row">登録日</th>
-                  <td>{{ $toothcheck->created_at }}</td>
-                </tr>
-                <tr>
-                  <th scope="row" colspan="2">診断コメント :<br><span class="toothComment">{{ $toothcheck->comment }}</span></th>
-                </tr>
-              </table>
-            </section>
+            <table class="table table-striped">
+              <tr>
+                <th scope="row">ユーザー番号</th>
+                <td>{{ $toothcheck->user_id }}</td>
+              </tr>
+              <tr>
+                <th scope="row">登録日</th>
+                <td>{{ $toothcheck->created_at }}</td>
+              </tr>
+              <tr>
+                <th scope="row" colspan="2">診断コメント :<br><span class="toothComment">{{ $toothcheck->comment }}</span>
+                </th>
+              </tr>
+            </table>
+          </section>
+          <div class="goToIndex">
+            <a class="btn btn-secondary toothbtn" href="{{ url('/') }}">戻る</a>
           </div>
         </div>
+
       </div>
-      <div class="goToIndex">
-        <a class="btn btn-secondary" href="{{ url('/') }}">戻る</a>
-      </div>
+    </div>
   </div>
 </div>
 @endsection
