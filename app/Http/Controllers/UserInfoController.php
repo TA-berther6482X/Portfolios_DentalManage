@@ -58,7 +58,7 @@ class UserInfoController extends Controller
         
         $user->save();
 
-        return redirect('/');
+        return redirect('/')->with('status', '登録情報を変更しました');
     }
 
     // public function destroy($id)
